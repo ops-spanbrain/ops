@@ -29,3 +29,9 @@ timedatectl set-ntp yes
 ntpq -p
 
 date
+
+echo "install git"
+
+wget -qO- https://raw.githubusercontent.com/ops-spanbrain/ops/master/install/igit.sh | bash && source /etc/bashrc && git --version
+
+
